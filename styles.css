@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vinicius-dark: #141C14;
+  --vinicius-gray: #C0C0C0;
+  --vinicius-primary: #06E767;
+  --vinicius-ligth-gray: #84847C;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100dvw;
+}

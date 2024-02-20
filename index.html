@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>ViniciusTei</title>
+  <meta name="description"
+    content="This is my website portifolio. It should be a place for me to introduce myself and showcase some of my projects.">
+  <meta name="keywords" content="website,portifolio,fullstack,frontend,backend,developer">
+  <meta name="robots" content="">
+  <meta name="revisit-after" content="1 day">
+  <meta name="language" content="Portuguese">
+  <meta name="generator" content="N/A">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <link href="dist/styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a8336dacef.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-[100dvh] w-full">
+  <header class="sticky top-0 z-10 w-full shadow py-2 bg-white flex items-center justify-between px-4 md:px-6">
+    <a class="flex items-center space-x-2" href="#">
+      <img src="assets/favicon-32x32.png" alt="Image"
+        class="mx-auto aspect-[1/1] rounded-xl overflow-hidden object-cover object-center sm:w-full" width="32"
+        height="32">
+      <span class="font-semibold">ViniciusTei</span>
+    </a>
+
+    <nav class="hidden md:flex gap-4 lg:gap-6">
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#home">
+        Home
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#skills">
+        Skills
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#projects">
+        Projects
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#experience">
+        Experience
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#contact">
+        Contact
+      </a>
+    </nav>
+
+    <div class="cursor-not-allowed" title="This feature is going to be implemented soon">
+      <i class="fa-regular fa-sun"></i>
+    </div>
+  </header>
+
+  <main class="grid grid-cols-1 gap-6 w-full lg:gap-12">
+    <section id="home" class="pb-12 md:py-24 lg:py-32 xl:py-48">
+      <div
+        class="grid gap-4 grid-rows-2 w-full items-center max-w-5xl md:mx-auto md:grid-cols-2 md:grid-rows-1 md:gap-1">
+        <div class="flex flex-col gap-2 px-12 items-start justify-center">
+          <div class="inline-block rounded-lg bg-vinicius-green text-vinicius-dark px-3 py-1 text-sm max-w-fit">
+            Fullstack Developer
+          </div>
+
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+            Vinicius Teixeira
+          </h1>
+
+          <p class="text-gray-500 max-w-sm">
+            I'm a fullstack developer looking to grow in my career and be part
+            of major transformations. My mission is to build all sort of applications
+            that make a difference.
+          </p>
+          <div class="text-3xl text-vinicius-primary">
+            <a href="https://github.com/viniciustei" target=”_blank”>
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a href="https://linkedin.com/viniciustei" target=”_blank”>
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-4 flex items-center justify-center max-w-sm mx-auto">
+          <img src="assets/Vinicius.png" alt="Image"
+            class="aspect-[1/1] rounded-xl overflow-hidden object-cover object-center md:w-full" width="400"
+            height="500">
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="inline-grid gap-4 py-12 md:py-24 lg:py-32 border-t">
+      <div class="px-12">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          My Skills
+        </h2>
+        <p class="max-w-sm md:max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          I'm proficient in a variety of technologies and tools.
+          Here are some of my skills.
+        </p>
+      </div>
+      <div class="md:mx-auto grid max-w-5xl items-start gap-6 px-12 sm:grid-cols-2 lg:gap-12">
+        <div class="flex flex-col gap-1.5">
+          <div class="rounded-lg bg-vinicius-primary text-white px-3 py-1 text-sm flex items-center justify-between">
+            HTML/CSS/JAVASCRITP
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+          <div class="rounded-lg bg-vinicius-primary text-white px-3 py-1 text-sm  flex items-center justify-between">
+            React/Angular
+
+            <div>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-angular"></i>
+            </div>
+          </div>
+          <div class="rounded-lg bg-vinicius-primary text-white px-3 py-1 text-sm  flex items-center justify-between">
+            Python/Java/Typescript
+            <div>
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-java"></i>
+            </div>
+          </div>
+          <div class="rounded-lg bg-vinicius-primary text-white px-3 py-1 text-sm  flex items-center justify-between">
+            C/Go <i class="fa-brands fa-golang"></i>
+          </div>
+          <div class="rounded-lg bg-vinicius-primary text-white px-3 py-1 text-sm  flex items-center justify-between">
+            Cloud (AWS/GCP/Azure) <i class="fa-solid fa-cloud"></i>
+          </div>
+        </div>
+        <div class="grid gap-1.5">
+          <p class="text-sm">
+            Proficient in building responsive and visually appealing
+            styles for web applications.
+          </p>
+          <p class="text-sm">
+            Strong understanding of programing and web fundamentals, like
+            algotithms and data structures and web protocols.
+          </p>
+          <p class="text-sm">
+            Experience in building dynamic and interactive user
+            interfaces using web frameworks linke React.Js and Angular.
+          </p>
+          <p class="text-sm">
+            Knowledge of server-side JavaScript and building scalable
+            backend applications using Node.js or other languages like Go.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="inline-grid gap-4 py-12 md:py-24 lg:py-32 bg-gray-100">
+      <div class="px-12">
+        <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+          My Projects
+        </h2>
+        <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Check out some of the projects I've worked on.
+        </p>
+      </div>
+      <div class="mx-auto grid max-w-5xl items-start gap-6 px-12 lg:grid-cols-2 lg:gap-12">
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold">
+            <a href="http://abatcaverna.com" target="_blank">
+              Abat Caverna <i class="fa-solid fa-link text-xs"></i>
+            </a>
+          </h3>
+          <p class="text-sm">
+            Home site for the Fraternity of students from the university. It consisis in a
+            landing page to introduce the house, a marketplace to sell fraternity items.
+            And a internal dashboard to manage the house and it`s people.
+          </p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold">
+            <a href="http://viniciustei.com.br/rock-paper-scissors" target="_blank">
+              Rock, Paper and Scissors <i class="fa-solid fa-link text-xs"></i>
+            </a>
+          </h3>
+          <p class="text-sm">
+            This is the solution for a frontend mentor challenge. But instead of focusing
+            only on the frontend I challenged my self build a Go webservice for a multiplayer
+            experience of the game. Using websockets to do real time comunication between the
+            players.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="experience" class="w-full flex flex-col gap-6 py-12 md:py-24 lg:py-32">
+      <div class="space-y-3 min-w-[64rem] mx-auto">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          My Experience
+        </h2>
+        <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Here's a summary of my work experience.
+        </p>
+      </div>
+      <div class="mx-auto grid max-w-5xl items-start gap-6 lg:grid-cols-2 lg:gap-12">
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold">College</h3>
+          <p class="text-sm text-gray-500">
+            Graduated in Computer Science for the University Federal of Viçosa in 2023.
+          </p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold">Frontend Developer</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Description of the role and responsibilities as a frontend
+            developer at Company B. This is a sample text to describe the
+            job position and provide some details about the tasks and
+            projects.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+-->
+
+  </main>
+  <footer class="p-2 border-t flex justify-center w-full">
+    <div class="flex items-center justify-center gap-1 w-fit-content">
+      <img alt="logo" src="assets/favicon-32x32.png" />
+
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="https://github.com/viniciustei"
+        target=”_blank”>
+        ViniciusTei
+      </a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
