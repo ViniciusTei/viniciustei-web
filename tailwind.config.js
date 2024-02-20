@@ -13,6 +13,20 @@ module.exports = {
           dark: "#141C14",
         },
       },
+      keyframes: {
+        enter: {
+          '0%': { transform: 'translateY(300px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        leave: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(300px)' },
+        }
+      },
+      animation: {
+        enter: 'enter 1s ease-in',
+        leave: 'leave 1s ease-out',
+      }
     },
   },
   plugins: [
