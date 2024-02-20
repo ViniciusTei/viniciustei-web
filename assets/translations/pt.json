@@ -1,0 +1,62 @@
+{
+  "header": {
+    "nav": {
+      "home": "Início",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "experience": "Experiência",
+      "contact": "Contato"
+    }
+  },
+  "main": {
+    "home": {
+      "text": "Sou um desenvolvedor fullstack em busca de crescimento na minha carreira e de participar de transformações significativas. Minha missão é construir todo tipo de aplicação que faça diferença."
+    },
+    "skills": {
+      "title": "Minhas Habilidades",
+      "description": "Tenho proficiência em diversas tecnologias e ferramentas. Aqui estão algumas das minhas habilidades.",
+      "additionalInfo": [
+        "Proficiente em construir estilos responsivos e visualmente atraentes para aplicações web.",
+        "Compreensão sólida de programação e fundamentos da web, como algoritmos, estruturas de dados e protocolos web.",
+        "Experiência na construção de interfaces de usuário dinâmicas e interativas usando frameworks web como React.Js e Angular.",
+        "Conhecimento em JavaScript no lado do servidor e construção de aplicações backend escaláveis usando Node.js ou outras linguagens como Go."
+      ]
+    },
+    "projects": {
+      "title": "Meus Projetos",
+      "description": "Confira alguns dos projetos em que trabalhei.",
+      "projectsList": [
+        {
+          "name": "AbatCaverna",
+          "description": "Site da casa da República Estudantil em que vivi durante a universidade. Consiste em uma página inicial para apresentar a casa, um mercado para vender itens da fraternidade e um painel interno para gerenciar a casa e seus membros."
+        },
+        {
+          "name": "Pedra, Papel e Tesoura",
+          "description": "Esta é a solução para um desafio do mentor de frontend. Em vez de focar apenas no frontend, desafiei-me a construir um serviço web em Go para uma experiência multiplayer do jogo, utilizando websockets para comunicação em tempo real entre jogadores."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Minha Experiência",
+      "description": "Aqui está um resumo da minha experiência.",
+      "experienceList": [
+        {
+          "position": "College",
+          "description": "Formei-me em Ciência da Computação pela Universidade Federal de Viçosa em 2023. Ao longo dos meus estudos, adquiri uma compreensão profunda de vários aspectos da ciência da computação, incluindo programação, algoritmos e desenvolvimento de software."
+        },
+        {
+          "position": "Software Developer",
+          "description": "Com mais de cinco anos de experiência em desenvolvimento de software, evolui de um desenvolvedor frontend especializado para um engenheiro full-stack versátil. Minha ampla gama de habilidades me permite contribuir efetivamente em todas as etapas do processo de desenvolvimento de software, resultando em produtos robustos e eficientes. Garanto que o software que construo não seja apenas funcional, mas também escalável e acessível."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Veja como você pode entrar em contato comigo."
+    }
+  },
+  "alert": {
+    "title": "🚧 Em construção! 🚧",
+    "message": "Este site é uma prova de conceito. Pode e receberá alterações no futuro."
+  }
+}

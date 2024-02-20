@@ -1,0 +1,113 @@
+{
+  "header": {
+    "nav": {
+      "a#home": {
+        "text": "Home"
+      },
+      "a#skills": {
+        "text": "Skills"
+      },
+      "a#projects": {
+        "text": "Projects"
+      },
+      "a#experience": {
+        "text": "Experience"
+      },
+      "a#contact": {
+        "text": "Contact"
+      }
+    }
+  },
+  "main": {
+    "section#home": {
+      "div.grid": {
+        "div.flex": {
+          "p": {
+            "text": "I'm a fullstack developer looking to grow in my career and be part of major transformations. My mission is to build all sort of applications that make a difference."
+          }
+        }
+      }
+    },
+    "section#skills": {
+      "div": {
+        "h2": {
+          "text": "My Skills"
+        },
+        "p": {
+          "text": "I'm proficient in a variety of technologies and tools. Here are some of my skills."
+        }
+      },
+      "div.2": {
+        "div.grid.gap-1.5": {
+          "p.text-sm": {
+            "text": "Knowledge of server-side JavaScript and building scalable backend applications using Node.js or other languages like Go."
+          }
+        }
+      }
+    },
+    "section#projects": {
+      "div.px-12": {
+        "h2.text-3xl.font-bold.tracking-tighter.md:text-4xl/tight": {
+          "text": "My Projects"
+        },
+        "p.max-w-[600px].text-gray-500.md:text-xl/relaxed.lg:text-base/relaxed.xl:text-xl/relaxed": {
+          "text": "Check out some of the projects I've worked on."
+        }
+      },
+      "div.mx-auto.grid.max-w-5xl.items-start.gap-6.px-12.md:grid-cols-2.lg:gap-12": {
+        "div.space-y-2": {
+          "h3": {
+            "1": {
+              "text": "Rock, Paper and Scissors"
+            }
+          },
+          "p": {
+            "text": "This is the solution for a frontend mentor challenge. However, instead of solely focusing on the frontend, I challenged myself to build a Go web service for a multiplayer experience of the game. Utilizing websockets for real-time communication between players."
+          }
+        }
+      }
+    },
+    "section#experience": {
+      "div.px-12": {
+        "h2.text-3xl.font-bold.tracking-tighter.sm:text-4xl.md:text-5xl": {
+          "text": "My Experience"
+        },
+        "p.max-w-[600px].text-gray-500.md:text-xl/relaxed.lg:text-base/relaxed.xl:text-xl/relaxed": {
+          "text": "Here's a summary of my experience."
+        }
+      },
+      "div.px-12.grid.items-center.max-w-5xl.mx-auto.gap-4.md:grid-cols-2": {
+        "div.space-y-2": {
+          "h3.text-xl.font-bold": {
+            "text": "Software Developer"
+          },
+          "p.text-sm": {
+            "text": "With over five years of experience in software development, I have evolved from a specialized frontend developer to a versatile full-stack engineer. My comprehensive skill set allows me to contribute effectively to every stage of the software development process, resulting in robust and efficient products. I ensure that the software I build is not only functional but also scalable and accessible."
+          }
+        }
+      }
+    },
+    "section#contact": {
+      "div.px-12": {
+        "h2.text-3xl.font-bold.tracking-tighter.sm:text-4xl.md:text-5xl": {
+          "text": "Contact"
+        },
+        "p.max-w-[600px].text-gray-500.md:text-xl/relaxed.lg:text-base/relaxed.xl:text-xl/relaxed": {
+          "text": "Here is how you can contact me."
+        }
+      }
+      }
+    }
+  },
+  "footer": {},
+  "under-construction": {
+    "div#grid gap-2": {
+      "strong.font-bold.tracking-tighter.text-sm.text-gray-800": {
+        "text": "🚧 Work in progress! 🚧"
+      },
+      "p.text-gray-500.text-xs/relaxed": {
+        "text": "This website is a proof of concept. It can and will receive changes in the future."
+      }
+    }
+  }
+}

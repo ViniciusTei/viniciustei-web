@@ -1,0 +1,63 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
+  },
+  "main": {
+    "home": {
+      "text": "I'm a fullstack developer looking to grow in my career and be part of major transformations. My mission is to build all sorts of applications that make a difference."
+    },
+    "skills": {
+      "title": "My Skills",
+      "description": "I'm proficient in a variety of technologies and tools. Here are some of my skills.",
+      "additionalInfo": [
+        "Proficient in building responsive and visually appealing styles for web applications.",
+        "Strong understanding of programing and web fundamentals, like algotithms and data structures and web protocols.",
+        "Experience in building dynamic and interactive user interfaces using web frameworks like React.Js and Angular.",
+        "Knowledge of server-side JavaScript and building scalable backend applications using Node.js or other languages like Go."
+      ]
+    },
+    "projects": {
+      "title": "My Projects",
+      "description": "Check out some of the projects I've worked on.",
+      "projectsList": [
+        {
+          "name": "AbatCavnerna",
+          "description": "Home site for the University's Student Fraternity I lived in. It consists of a landing page to introduce the house, a marketplace to sell fraternity items, and an internal dashboard to manage the house and its members."
+        },
+        {
+          "name": "Rock, Paper and Scissors",
+          "description": "This is the solution for a frontend mentor challenge. Instead of solely focusing on the frontend, I challenged myself to build a Go web service for a multiplayer experience of the game, utilizing websockets for real-time communication between players."
+        }
+      ]
+    },
+    "experience": {
+      "title": "My Experience",
+      "description": "Here's a summary of my experience.",
+      "experienceList": [
+        {
+          "position": "College",
+          "description": "I graduated in Computer Science from the Federal University of Viçosa in 2023. Throughout my studies, I gained a deep understanding of various aspects of computer science, including programming, algorithms, and software development."
+        },
+        {
+          "position": "Software Developer",
+          "description": "With over five years of experience in software development, I have evolved from a specialized frontend developer to a versatile full-stack engineer. My comprehensive skill set allows me to contribute effectively to every stage of the software development process, resulting in robust and efficient products. I ensure that the software I build is not only functional but also scalable and accessible."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Here is how you can contact me."
+    }
+  },
+  "alert": {
+    "title": "🚧 Work in progress! 🚧",
+    "message": "This website is a proof of concept. It can and will receive changes in the future."
+  }
+}
+
