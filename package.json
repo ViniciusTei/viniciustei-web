@@ -1,12 +1,10 @@
 {
   "name": "viniciustei-web",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run tailwind:build && live-server ./",
-    "dev": "live-server & npm run tailwind",
+    "start": "live-server & npm run tailwind",
     "tailwind": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch",
     "tailwind:build": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify"
   },
