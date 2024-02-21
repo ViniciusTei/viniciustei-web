@@ -13,6 +13,6 @@ You can see this project on https://viniciustei.com.br
 | Version    | Changes    
 |---------------- | --------------- 
 | 0.0.1    | Work in progress    
-|---------------- | --------------- 
 | 0.0.2    | Setup translations in pt and en    
+| 0.0.3    | Add dark theme    
 
