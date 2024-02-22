@@ -41,11 +41,11 @@
       "description": "Aqui está um resumo da minha experiência.",
       "experienceList": [
         {
-          "position": "College",
+          "position": "Faculdade",
           "description": "Formei-me em Ciência da Computação pela Universidade Federal de Viçosa em 2023. Ao longo dos meus estudos, adquiri uma compreensão profunda de vários aspectos da ciência da computação, incluindo programação, algoritmos e desenvolvimento de software."
         },
         {
-          "position": "Software Developer",
+          "position": "Desenvolvimento de software",
           "description": "Com mais de cinco anos de experiência em desenvolvimento de software, evolui de um desenvolvedor frontend especializado para um engenheiro full-stack versátil. Minha ampla gama de habilidades me permite contribuir efetivamente em todas as etapas do processo de desenvolvimento de software, resultando em produtos robustos e eficientes. Garanto que o software que construo não seja apenas funcional, mas também escalável e acessível."
         }
       ]
