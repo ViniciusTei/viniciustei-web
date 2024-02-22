@@ -12,6 +12,7 @@ module.exports = {
           primary: "#84847C",
           green: "#06E767",
           dark: "#141C14",
+          'light-dark': "#293A29",
         },
       },
       keyframes: {
