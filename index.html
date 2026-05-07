@@ -2,6 +2,13 @@
 <html lang="pt-br">
 
 <head>
+  <script>
+    if (localStorage.getItem('color-theme') === 'dark' ||
+        (!localStorage.getItem('color-theme') &&
+         window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
   <title>ViniciusTei</title>
   <meta name="title" content="ViniciusTei" />
   <meta name="description" content="This is my website portfolio. It should be a place for me to introduce myself and showcase some of my projects." />
@@ -253,6 +260,7 @@
             <span class="font-label text-sm uppercase tracking-widest">Send a Message</span>
           </a>
           <a href="https://wa.me/5531995339124?text=Oi%20vim%20pelo%20website"
+             target="_blank" rel="noopener noreferrer"
              class="flex items-center gap-3 bg-surface-high border border-black/10 dark:border-white/10 rounded-lg px-8 py-4 text-on-surface hover:border-accent/50 transition-colors">
             <i class="fa-brands fa-whatsapp text-accent-text"></i>
             <span class="font-label text-sm uppercase tracking-widest">Start a Chat</span>
