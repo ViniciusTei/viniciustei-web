@@ -55,10 +55,10 @@
     </nav>
 
     <div class="ml-auto flex gap-2">
-      <button id="theme-toggle-light-icon" class="hidden p-1 text-on-surface-variant hover:text-on-surface transition-colors">
+      <button id="theme-toggle-light-icon" class="hidden p-1 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Switch to light mode">
         <i class="fa-regular fa-sun"></i>
       </button>
-      <button id="theme-toggle-dark-icon" class="hidden p-1 text-on-surface-variant hover:text-on-surface transition-colors">
+      <button id="theme-toggle-dark-icon" class="hidden p-1 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Switch to dark mode">
         <i class="fa-regular fa-moon"></i>
       </button>
     </div>
@@ -82,10 +82,10 @@
           <a href="#contact" class="font-label text-sm uppercase tracking-widest border border-outline text-on-surface px-8 py-3 rounded hover:border-on-surface transition-all">Get In Touch</a>
         </div>
         <div class="flex gap-6 text-2xl text-on-surface-variant">
-          <a href="https://github.com/viniciustei" target="_blank" aria-label="Link para o github" class="hover:text-accent-text transition-colors">
+          <a href="https://github.com/viniciustei" target="_blank" rel="noopener noreferrer" aria-label="Link para o github" class="hover:text-accent-text transition-colors">
             <i class="fa-brands fa-square-github"></i>
           </a>
-          <a href="https://linkedin.com/in/viniciustei" target="_blank" aria-label="Link para o linkedin" class="hover:text-accent-text transition-colors">
+          <a href="https://linkedin.com/in/viniciustei" target="_blank" rel="noopener noreferrer" aria-label="Link para o linkedin" class="hover:text-accent-text transition-colors">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
@@ -165,38 +165,38 @@
           <!-- Featured: Abat Caverna -->
           <article class="md:col-span-2 group bg-surface border border-black/10 dark:border-white/10 rounded-lg overflow-hidden flex flex-col">
             <div class="relative h-64 md:h-80 bg-surface-high flex items-center justify-center">
-              <img src="" alt="Abat Caverna" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity">
+              <img src="data:," alt="Abat Caverna" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity">
               <span class="font-label text-[11px] uppercase tracking-widest text-outline">No preview</span>
             </div>
             <div class="p-8 flex flex-col gap-3 flex-1">
               <span class="font-label text-[11px] uppercase tracking-widest text-outline">Web Application</span>
               <h3 class="font-display text-2xl font-semibold text-on-surface">
-                <a href="http://abatcaverna.com" target="_blank">Abat Caverna</a>
+                <a href="http://abatcaverna.com" target="_blank" rel="noopener noreferrer">Abat Caverna</a>
               </h3>
               <p data-i18n-key="main.projects.projectsList.0.description" class="font-body text-sm text-on-surface-variant leading-relaxed flex-1">
                 Home site for the University's Student Fraternity I lived in. It consists of a landing page to introduce the house, a marketplace to sell fraternity items, and an internal dashboard to manage the house and its members.
               </p>
-              <a href="http://abatcaverna.com" target="_blank" class="font-label text-xs uppercase tracking-widest text-accent-text hover:brightness-110 transition-all mt-2">View Project &rarr;</a>
+              <a href="http://abatcaverna.com" target="_blank" rel="noopener noreferrer" class="font-label text-xs uppercase tracking-widest text-accent-text hover:brightness-110 transition-all mt-2">View Project &rarr;</a>
             </div>
           </article>
 
           <!-- Rock, Paper and Scissors -->
           <article class="group bg-surface border border-black/10 dark:border-white/10 rounded-lg overflow-hidden flex flex-col">
             <div class="relative h-64 bg-surface-high flex items-center justify-center">
-              <img src="" alt="Rock Paper Scissors" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity">
+              <img src="data:," alt="Rock Paper Scissors" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity">
               <span class="font-label text-[11px] uppercase tracking-widest text-outline">No preview</span>
             </div>
             <div class="p-8 flex flex-col gap-3 flex-1">
               <span class="font-label text-[11px] uppercase tracking-widest text-outline">Game / Websockets</span>
               <h3 class="font-display text-2xl font-semibold text-on-surface">
-                <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank">
+                <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank" rel="noopener noreferrer">
                   <span data-i18n-key="main.projects.projectsList.1.name">Rock, Paper and Scissors</span>
                 </a>
               </h3>
               <p data-i18n-key="main.projects.projectsList.1.description" class="font-body text-sm text-on-surface-variant leading-relaxed flex-1">
                 This is the solution for a frontend mentor challenge. However, instead of solely focusing on the frontend, I challenged myself to build a Go web service for a multiplayer experience of the game. Utilizing websockets for real-time communication between players.
               </p>
-              <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank" class="font-label text-xs uppercase tracking-widest text-accent-text hover:brightness-110 transition-all mt-2">View Project &rarr;</a>
+              <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank" rel="noopener noreferrer" class="font-label text-xs uppercase tracking-widest text-accent-text hover:brightness-110 transition-all mt-2">View Project &rarr;</a>
             </div>
           </article>
         </div>
@@ -268,15 +268,15 @@
     <div class="max-w-screen-xl mx-auto px-8 md:px-16 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <img src="assets/favicon-32x32.png" alt="VT logo" width="20" height="20">
-        <a href="https://github.com/ViniciusTei/viniciustei-web" target="_blank"
+        <a href="https://github.com/ViniciusTei/viniciustei-web" target="_blank" rel="noopener noreferrer"
            class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">
           ViniciusTei
         </a>
       </div>
       <span class="font-body text-xs text-outline">&#169; 2026 Vinicius Teixeira. Digital Craftsmanship.</span>
       <div class="flex gap-4 text-on-surface-variant">
-        <a href="https://github.com/viniciustei" target="_blank" aria-label="GitHub" class="hover:text-accent-text transition-colors"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/viniciustei" target="_blank" aria-label="LinkedIn" class="hover:text-accent-text transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/viniciustei" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-accent-text transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/viniciustei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent-text transition-colors"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:viniciustprates@gmail.com" aria-label="Email" class="hover:text-accent-text transition-colors"><i class="fa-regular fa-envelope"></i></a>
       </div>
     </div>
@@ -298,6 +298,8 @@
     window.addEventListener('resize', resize);
 
     function isDark() { return document.documentElement.classList.contains('dark'); }
+
+    var raf;
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -342,8 +344,17 @@
       }
 
       angle += 0.003;
-      requestAnimationFrame(draw);
+      raf = requestAnimationFrame(draw);
     }
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        cancelAnimationFrame(raf);
+      } else {
+        raf = requestAnimationFrame(draw);
+      }
+    });
+
     draw();
   })();
   </script>
