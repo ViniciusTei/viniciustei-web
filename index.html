@@ -2,35 +2,23 @@
 <html lang="pt-br">
 
 <head>
-  <!-- Primary Meta Tags -->
   <title>ViniciusTei</title>
   <meta name="title" content="ViniciusTei" />
-  <meta name="description"
-    content="This is my website portifolio. It should be a place for me to introduce myself and showcase some of my projects." />
-
-  <!-- Open Graph / Facebook -->
+  <meta name="description" content="This is my website portfolio. It should be a place for me to introduce myself and showcase some of my projects." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://viniciustei.com.br/" />
   <meta property="og:title" content="ViniciusTei" />
-  <meta property="og:description"
-    content="This is my website portifolio. It should be a place for me to introduce myself and showcase some of my projects." />
+  <meta property="og:description" content="This is my website portfolio. It should be a place for me to introduce myself and showcase some of my projects." />
   <meta property="og:image" content="https://viniciustei.com.br/assets/Vinicius.png" />
-
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://viniciustei.com.br/" />
   <meta property="twitter:title" content="ViniciusTei" />
-  <meta property="twitter:description"
-    content="This is my website portifolio. It should be a place for me to introduce myself and showcase some of my projects." />
+  <meta property="twitter:description" content="This is my website portfolio. It should be a place for me to introduce myself and showcase some of my projects." />
   <meta property="twitter:image" content="https://viniciustei.com.br/assets/Vinicius.png" />
-
-  <!-- Meta Tags Generated with https://metatags.io -->
-
-  <meta name="keywords" content="website,portifolio,fullstack,frontend,backend,developer">
+  <meta name="keywords" content="website,portfolio,fullstack,frontend,backend,developer">
   <meta name="robots" content="">
   <meta name="revisit-after" content="1 day">
   <meta name="language" content="Portuguese">
-  <meta name="generator" content="N/A">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,300 +27,376 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://viniciustei.com.br/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://viniciustei.com.br/assets/favicon-16x16.png">
   <link rel="manifest" href="https://viniciustei.com.br/assets/site.webmanifest">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&family=Manrope:wght@400&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
   <link href="dist/styles.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a8336dacef.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="min-h-[100dvh] w-full dark:bg-vinicius-dark">
-  <header
-    class="sticky top-0 z-10 w-full shadow py-2 bg-white flex items-center justify-between px-4 md:px-6 dark:bg-vinicius-dark dark:text-vinicius">
-    <a class="flex items-center space-x-2" href="#">
-      <img src="assets/favicon-32x32.png" alt="Image"
-        class="mx-auto aspect-[1/1] rounded-xl overflow-hidden object-cover object-center sm:w-full" width="32"
-        height="32">
-      <span class="font-semibold">ViniciusTei</span>
+<body class="bg-background text-on-surface min-h-[100dvh]">
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-0.5 bg-accent z-[100]" style="width:0%"></div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0.5 left-0 right-0 z-50 flex h-14 items-center px-8 backdrop-blur-md bg-white/80 dark:bg-black/50 border-b border-black/10 dark:border-white/10">
+    <a href="#" class="flex items-center gap-2">
+      <img src="assets/favicon-32x32.png" alt="VT" width="20" height="20" class="rounded">
+      <span class="font-label text-sm uppercase tracking-widest text-on-surface">VT</span>
     </a>
 
-    <nav class="hidden md:flex flex-1 items-center justify-center gap-4 lg:gap-6">
-      <a data-i18n-key="header.nav.home" class="text-sm font-medium hover:underline underline-offset-4" href="#home">
-        Home
-      </a>
-      <a data-i18n-key="header.nav.skills" class="text-sm font-medium hover:underline underline-offset-4"
-        href="#skills">
-        Skills
-      </a>
-      <a data-i18n-key="header.nav.projects" class="text-sm font-medium hover:underline underline-offset-4"
-        href="#projects">
-        Projects
-      </a>
-      <a data-i18n-key="header.nav.experience" class="text-sm font-medium hover:underline underline-offset-4"
-        href="#experience">
-        Experience
-      </a>
-      <a data-i18n-key="header.nav.contact" class="text-sm font-medium hover:underline underline-offset-4"
-        href="#contact">
-        Contact
-      </a>
+    <nav class="hidden md:flex flex-1 items-center justify-center gap-8">
+      <a data-i18n-key="header.nav.home" href="#home" class="nav-link relative font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface pb-1 transition-colors">Home</a>
+      <a data-i18n-key="header.nav.skills" href="#skills" class="nav-link relative font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface pb-1 transition-colors">Skills</a>
+      <a data-i18n-key="header.nav.projects" href="#projects" class="nav-link relative font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface pb-1 transition-colors">Projects</a>
+      <a data-i18n-key="header.nav.experience" href="#experience" class="nav-link relative font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface pb-1 transition-colors">Experience</a>
+      <a data-i18n-key="header.nav.contact" href="#contact" class="nav-link relative font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface pb-1 transition-colors">Contact</a>
     </nav>
 
-    <button id="theme-toggle-light-icon" class="hidden">
-      <i class="fa-regular fa-sun"></i>
-    </button>
-    <button id="theme-toggle-dark-icon" class="hidden">
-      <i class="fa-regular fa-moon"></i>
-    </button>
+    <div class="ml-auto flex gap-2">
+      <button id="theme-toggle-light-icon" class="hidden p-1 text-on-surface-variant hover:text-on-surface transition-colors">
+        <i class="fa-regular fa-sun"></i>
+      </button>
+      <button id="theme-toggle-dark-icon" class="hidden p-1 text-on-surface-variant hover:text-on-surface transition-colors">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+    </div>
   </header>
 
-  <main class="grid grid-cols-1 items-stretch justify-items-center gap-6 w-full lg:gap-12">
-    <section id="home" class="max-w-screen-lg pb-12 md:py-24 lg:py-32 xl:py-48">
-      <div
-        class="grid gap-4 grid-rows-2 w-full items-center max-w-5xl md:mx-auto md:grid-cols-2 md:grid-rows-1 md:gap-1">
-        <div class="flex flex-col gap-2 px-12 items-start justify-center">
-          <div class="inline-block rounded-lg bg-vinicius-green text-vinicius-dark px-3 py-1 text-sm max-w-fit">
-            Fullstack Developer
-          </div>
+  <main>
 
-          <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl dark:text-white">
-            Vinicius Teixeira
-          </h1>
-
-          <p data-i18n-key="main.home.text" class="text-gray-500 max-w-sm dark:text-vinicius">
-            I'm a fullstack developer looking to grow in my career and be part
-            of major transformations. My mission is to build all sort of applications
-            that make a difference.
-          </p>
-          <div class="text-3xl text-vinicius-primary">
-            <a href="https://github.com/viniciustei" target=”_blank” aria-label="Link para o github">
-              <i class="fa-brands fa-square-github"></i>
-            </a>
-            <a href="https://linkedin.com/viniciustei" target=”_blank” aria-label="Link para o linkedin">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
+    <!-- HERO -->
+    <section id="home" class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-background">
+      <canvas id="hero-sphere" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+      <div class="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto pt-14">
+        <span class="font-label text-xs uppercase tracking-[0.15em] text-accent-text mb-6">Fullstack Developer</span>
+        <h1 class="font-display text-6xl md:text-8xl font-black tracking-tight text-on-surface leading-[1.1] mb-6">
+          Vinicius Teixeira
+        </h1>
+        <p data-i18n-key="main.home.text" class="font-body text-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+          I'm a fullstack developer looking to grow in my career and be part of major transformations. My mission is to build all sort of applications that make a difference.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center mb-10">
+          <a href="#projects" class="font-label text-sm uppercase tracking-widest bg-accent text-black px-8 py-3 rounded hover:brightness-110 transition-all">View Work</a>
+          <a href="#contact" class="font-label text-sm uppercase tracking-widest border border-outline text-on-surface px-8 py-3 rounded hover:border-on-surface transition-all">Get In Touch</a>
         </div>
-
-        <div class="space-y-4 flex items-center justify-center max-w-sm mx-auto">
-          <img src="assets/Vinicius.png" alt="Image"
-            class="aspect-[1/1] rounded-xl overflow-hidden object-cover object-center md:w-full" width="400"
-            height="500">
+        <div class="flex gap-6 text-2xl text-on-surface-variant">
+          <a href="https://github.com/viniciustei" target="_blank" aria-label="Link para o github" class="hover:text-accent-text transition-colors">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/viniciustei" target="_blank" aria-label="Link para o linkedin" class="hover:text-accent-text transition-colors">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="max-w-screen-lg inline-grid gap-4 py-12 md:py-24 lg:py-32 border-t">
-      <div class="px-12">
-        <h2 data-i18n-key="main.skills.title"
-          class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
-          My Skills
-        </h2>
-        <p data-i18n-key="main.skills.description"
-          class="max-w-sm md:max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-vinicius">
-          I'm proficient in a variety of technologies and tools.
-          Here are some of my skills.
-        </p>
-      </div>
-      <div class="md:mx-auto grid max-w-5xl items-start gap-6 px-12 sm:grid-cols-2 lg:gap-12">
-        <div class="flex flex-col gap-1.5">
-          <div class="rounded-lg bg-vinicius-green px-3 py-1 text-sm flex items-center justify-between">
-            HTML/CSS/JAVASCRITP
-            <div>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-js"></i>
+    <!-- SKILLS -->
+    <section id="skills" class="py-32 bg-background">
+      <div class="max-w-screen-xl mx-auto px-8 md:px-16">
+        <div class="mb-16">
+          <span class="font-label text-xs uppercase tracking-[0.15em] text-accent-text">Personal Stack</span>
+          <h2 data-i18n-key="main.skills.title" class="font-display text-5xl font-bold text-on-surface mt-3 tracking-tight">
+            Core Expertise
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <!-- Frontend -->
+          <div class="bg-surface border border-black/10 dark:border-white/10 rounded-lg p-8">
+            <div class="text-accent-text text-2xl mb-4"><i class="fa-brands fa-html5"></i></div>
+            <h3 class="font-display text-xl font-semibold text-on-surface mb-4">Frontend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">HTML/CSS/JS</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">React</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">Angular</span>
             </div>
           </div>
-          <div class="rounded-lg bg-vinicius-green px-3 py-1 text-sm  flex items-center justify-between">
-            React/Angular
-
-            <div>
-              <i class="fa-brands fa-react"></i>
-              <i class="fa-brands fa-angular"></i>
+          <!-- Backend -->
+          <div class="bg-surface border border-black/10 dark:border-white/10 rounded-lg p-8">
+            <div class="text-accent-text text-2xl mb-4"><i class="fa-brands fa-python"></i></div>
+            <h3 class="font-display text-xl font-semibold text-on-surface mb-4">Backend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">Python</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">Java</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">TypeScript</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">Node.js</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">Go</span>
             </div>
           </div>
-          <div class="rounded-lg bg-vinicius-green px-3 py-1 text-sm  flex items-center justify-between">
-            Python/Java/Typescript
-            <div>
-              <i class="fa-brands fa-python"></i>
-              <i class="fa-brands fa-java"></i>
+          <!-- Infrastructure -->
+          <div class="bg-surface border border-black/10 dark:border-white/10 rounded-lg p-8">
+            <div class="text-accent-text text-2xl mb-4"><i class="fa-solid fa-cloud"></i></div>
+            <h3 class="font-display text-xl font-semibold text-on-surface mb-4">Infrastructure</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">AWS</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">GCP</span>
+              <span class="font-label text-[11px] uppercase tracking-widest text-accent-text bg-surface-high px-3 py-1 rounded">Azure</span>
             </div>
           </div>
-          <div class="rounded-lg bg-vinicius-green px-3 py-1 text-sm  flex items-center justify-between">
-            C/Go <i class="fa-brands fa-golang"></i>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+          <p data-i18n-key="main.skills.additionalInfo.0" class="font-body text-sm text-on-surface-variant leading-relaxed">Proficient in building responsive and visually appealing styles for web applications.</p>
+          <p data-i18n-key="main.skills.additionalInfo.1" class="font-body text-sm text-on-surface-variant leading-relaxed">Strong understanding of programming and web fundamentals, like algorithms and data structures and web protocols.</p>
+          <p data-i18n-key="main.skills.additionalInfo.2" class="font-body text-sm text-on-surface-variant leading-relaxed">Experience in building dynamic and interactive user interfaces using web frameworks like React.Js and Angular.</p>
+          <p data-i18n-key="main.skills.additionalInfo.3" class="font-body text-sm text-on-surface-variant leading-relaxed">Knowledge of server-side JavaScript and building scalable backend applications using Node.js or other languages like Go.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-32 bg-surface-low">
+      <div class="max-w-screen-xl mx-auto px-8 md:px-16">
+        <div class="flex items-start justify-between mb-16 gap-8 flex-wrap">
+          <div>
+            <span class="font-label text-xs uppercase tracking-[0.15em] text-accent-text">Portfolio</span>
+            <h2 data-i18n-key="main.projects.title" class="font-display text-5xl font-bold text-on-surface mt-3 tracking-tight">Selected Works</h2>
           </div>
-          <div class="rounded-lg bg-vinicius-green px-3 py-1 text-sm  flex items-center justify-between">
-            Cloud (AWS/GCP/Azure) <i class="fa-solid fa-cloud"></i>
+          <p data-i18n-key="main.projects.description" class="font-body text-base text-on-surface-variant max-w-xs leading-relaxed self-end">
+            Check out some of the projects I've worked on.
+          </p>
+        </div>
+
+        <!-- Project grid: featured wide (col-span-2) + narrower card.
+             To add a project: copy one <article> block and update name, description, link, image src. -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Featured: Abat Caverna -->
+          <article class="md:col-span-2 group bg-surface border border-black/10 dark:border-white/10 rounded-lg overflow-hidden flex flex-col">
+            <div class="relative h-64 md:h-80 bg-surface-high flex items-center justify-center">
+              <img src="" alt="Abat Caverna" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="font-label text-[11px] uppercase tracking-widest text-outline">No preview</span>
+            </div>
+            <div class="p-8 flex flex-col gap-3 flex-1">
+              <span class="font-label text-[11px] uppercase tracking-widest text-outline">Web Application</span>
+              <h3 class="font-display text-2xl font-semibold text-on-surface">
+                <a href="http://abatcaverna.com" target="_blank">Abat Caverna</a>
+              </h3>
+              <p data-i18n-key="main.projects.projectsList.0.description" class="font-body text-sm text-on-surface-variant leading-relaxed flex-1">
+                Home site for the University's Student Fraternity I lived in. It consists of a landing page to introduce the house, a marketplace to sell fraternity items, and an internal dashboard to manage the house and its members.
+              </p>
+              <a href="http://abatcaverna.com" target="_blank" class="font-label text-xs uppercase tracking-widest text-accent-text hover:brightness-110 transition-all mt-2">View Project &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Rock, Paper and Scissors -->
+          <article class="group bg-surface border border-black/10 dark:border-white/10 rounded-lg overflow-hidden flex flex-col">
+            <div class="relative h-64 bg-surface-high flex items-center justify-center">
+              <img src="" alt="Rock Paper Scissors" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="font-label text-[11px] uppercase tracking-widest text-outline">No preview</span>
+            </div>
+            <div class="p-8 flex flex-col gap-3 flex-1">
+              <span class="font-label text-[11px] uppercase tracking-widest text-outline">Game / Websockets</span>
+              <h3 class="font-display text-2xl font-semibold text-on-surface">
+                <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank">
+                  <span data-i18n-key="main.projects.projectsList.1.name">Rock, Paper and Scissors</span>
+                </a>
+              </h3>
+              <p data-i18n-key="main.projects.projectsList.1.description" class="font-body text-sm text-on-surface-variant leading-relaxed flex-1">
+                This is the solution for a frontend mentor challenge. However, instead of solely focusing on the frontend, I challenged myself to build a Go web service for a multiplayer experience of the game. Utilizing websockets for real-time communication between players.
+              </p>
+              <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank" class="font-label text-xs uppercase tracking-widest text-accent-text hover:brightness-110 transition-all mt-2">View Project &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-32 bg-background">
+      <div class="max-w-screen-xl mx-auto px-8 md:px-16">
+        <div class="mb-16">
+          <span class="font-label text-xs uppercase tracking-[0.15em] text-accent-text">Career Path</span>
+          <h2 data-i18n-key="main.experience.title" class="font-display text-5xl font-bold text-on-surface mt-3 tracking-tight">Experience</h2>
+        </div>
+
+        <!-- To add an entry: copy one grid row below and update date, position, description. -->
+        <div class="space-y-12 max-w-4xl">
+          <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 items-start">
+            <div><span class="font-label text-xs uppercase tracking-widest text-outline">2021 — Present</span></div>
+            <div>
+              <h3 data-i18n-key="main.experience.experienceList.1.position" class="font-display text-xl font-semibold text-on-surface mb-3">Software Developer</h3>
+              <p data-i18n-key="main.experience.experienceList.1.description" class="font-body text-sm text-on-surface-variant leading-relaxed">
+                With over five years of experience in software development, I have evolved from a specialized frontend developer to a versatile full-stack engineer. My comprehensive skill set allows me to contribute effectively to every stage of the software development process, resulting in robust and efficient products. I ensure that the software I build is not only functional but also scalable and accessible.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 items-start">
+            <div><span class="font-label text-xs uppercase tracking-widest text-outline">2018 — 2023</span></div>
+            <div>
+              <h3 data-i18n-key="main.experience.experienceList.0.position" class="font-display text-xl font-semibold text-on-surface mb-3">College</h3>
+              <p data-i18n-key="main.experience.experienceList.0.description" class="font-body text-sm text-on-surface-variant leading-relaxed">
+                I graduated in Computer Science from the Federal University of Viçosa in 2023. Throughout my studies, I gained a deep understanding of various aspects of computer science, including programming, algorithms, and software development.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="grid gap-1.5 dark:text-white">
-          <p data-i18n-key="main.skills.additionalInfo.0" class="text-sm">
-            Proficient in building responsive and visually appealing
-            styles for web applications.
-          </p>
-          <p data-i18n-key="main.skills.additionalInfo.1" class="text-sm">
-            Strong understanding of programing and web fundamentals, like
-            algotithms and data structures and web protocols.
-          </p>
-          <p data-i18n-key="main.skills.additionalInfo.2" class="text-sm">
-            Experience in building dynamic and interactive user
-            interfaces using web frameworks like React.Js and Angular.
-          </p>
-          <p data-i18n-key="main.skills.additionalInfo.3" class="text-sm">
-            Knowledge of server-side JavaScript and building scalable
-            backend applications using Node.js or other languages like Go.
-          </p>
-        </div>
       </div>
     </section>
 
-    <section id="projects"
-      class="max-w-screen-lg inline-grid gap-4 py-12 md:py-24 lg:py-32 bg-gray-100 border-t dark:bg-vinicius-light-dark">
-      <div class="px-12">
-        <h2 data-i18n-key="main.projects.title"
-          class="text-3xl font-bold tracking-tighter md:text-4xl/tight dark:text-white">
-          My Projects
+    <!-- CONTACT -->
+    <section id="contact" class="py-32 bg-surface border-t border-black/10 dark:border-white/10">
+      <div class="max-w-screen-xl mx-auto px-8 md:px-16 text-center">
+        <span class="font-label text-xs uppercase tracking-[0.15em] text-accent-text">Available for Collaboration</span>
+        <h2 class="font-display text-5xl md:text-6xl font-bold text-on-surface mt-3 mb-4 tracking-tight leading-tight">
+          Let's build something<br>extraordinary.
         </h2>
-        <p data-i18n-key="main.projects.description"
-          class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-vinicius">
-          Check out some of the projects I've worked on.
-        </p>
-      </div>
-      <div class="mx-auto grid max-w-5xl items-start gap-6 px-12 md:grid-cols-2 lg:gap-12 dark:text-white">
-        <div class="space-y-2">
-          <h3 class="text-xl font-bold">
-            <a href="http://abatcaverna.com" target="_blank">
-              Abat Caverna <i class="fa-solid fa-link text-xs"></i>
-            </a>
-          </h3>
-          <p data-i18n-key="main.projects.projectsList.0.description" class="text-sm">
-            Home site for the University's Student Fraternity I lived in. It consists
-            of a landing page to introduce the house, a marketplace to sell fraternity
-            items, and an internal dashboard to manage the house and its members.
-          </p>
-        </div>
-        <div class="space-y-2">
-
-          <h3 class="text-xl font-bold">
-            <a href="https://rockpaperscissors.viniciustei.com.br" target="_blank">
-              <span data-i18n-key="main.projects.projectsList.1.name">Rock, Paper and Scissors</span>
-              <i class="fa-solid fa-link text-xs"></i>
-            </a>
-          </h3>
-          <p data-i18n-key="main.projects.projectsList.1.description" class="text-sm">
-            This is the solution for a frontend mentor challenge. However, instead
-            of solely focusing on the frontend, I challenged myself to build a Go
-            web service for a multiplayer experience of the game. Utilizing websockets
-            for real-time communication between players.
-          </p>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="experience" class="max-w-screen-lg inline-grid gap-6 py-12 md:py-24 lg:py-32">
-      <div class="px-12">
-        <h2 data-i18n-key="main.experience.title"
-          class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
-          My Experience
-        </h2>
-        <p data-i18n-key="main.experience.description"
-          class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-vinicius">
-          Here's a summary of my experience.
-        </p>
-      </div>
-      <div class="px-12 grid items-start max-w-5xl mx-auto gap-4 md:grid-cols-2 dark:text-white">
-        <div class="space-y-2">
-          <h3 data-i18n-key="main.experience.experienceList.0.position" class="text-xl font-bold">College</h3>
-          <p data-i18n-key="main.experience.experienceList.0.description" class="text-sm">
-            I graduated in Computer Science from the Federal University of Viçosa in 2023.
-            Throughout my studies, I gained a deep understanding of various aspects
-            of computer science, including programming, algorithms, and software development.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h3 data-i18n-key="main.experience.experienceList.1.position" class="text-xl font-bold">Software Developer
-          </h3>
-          <p data-i18n-key="main.experience.experienceList.1.description" class="text-sm">
-            With over five years of experience in software development, I have evolved from
-            a specialized frontend developer to a versatile full-stack engineer.
-            My comprehensive skill set allows me to contribute effectively to every stage of the
-            software development process, resulting in robust and efficient products.
-            I ensure that the software I build is not only functional but also scalable and accessible.
-          </p>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="contact"
-      class="max-w-screen-lg w-full inline-grid gap-6 py-12 bg-gray-100 border-t dark:bg-vinicius-light-dark md:py-24 lg:py-32">
-      <div class="px-12">
-        <h2 data-i18n-key="main.contact.title"
-          class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
-          Contact</h2>
-
-        <p data-i18n-key="main.contact.description"
-          class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-vinicius">
+        <p data-i18n-key="main.contact.description" class="font-body text-base text-on-surface-variant mb-12 max-w-md mx-auto">
           Here is how you can contact me.
         </p>
+        <div class="flex flex-wrap gap-6 justify-center">
+          <a href="mailto:viniciustprates@gmail.com"
+             class="flex items-center gap-3 bg-surface-high border border-black/10 dark:border-white/10 rounded-lg px-8 py-4 text-on-surface hover:border-accent/50 transition-colors">
+            <i class="fa-regular fa-envelope text-accent-text"></i>
+            <span class="font-label text-sm uppercase tracking-widest">Send a Message</span>
+          </a>
+          <a href="https://wa.me/5531995339124?text=Oi%20vim%20pelo%20website"
+             class="flex items-center gap-3 bg-surface-high border border-black/10 dark:border-white/10 rounded-lg px-8 py-4 text-on-surface hover:border-accent/50 transition-colors">
+            <i class="fa-brands fa-whatsapp text-accent-text"></i>
+            <span class="font-label text-sm uppercase tracking-widest">Start a Chat</span>
+          </a>
+        </div>
       </div>
-
-      <div class="px-12 flex gap-4 my-8 md:max-w-5xl md:mx-auto">
-        <a class="inline-flex items-center justify-center w-10 h-10 p-2 rounded-full ring-2 ring-vinicius-dark dark:ring-vinicius dark:text-vinicius"
-          href="mailto:viniciustprates@gmail.com">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
-
-        <a class="inline-flex items-center justify-center w-10 h-10 p-2 rounded-full ring-2 ring-vinicius-dark dark:ring-vinicius dark:text-vinicius"
-          href="https://wa.me/5531995339124?text=Oi%20vim%20pelo%20website">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-      </div>
-
     </section>
-  </main>
-  <footer class="p-2 border-t flex justify-center w-full">
-    <div class="flex items-center justify-center gap-1 w-fit-content">
-      <img alt="logo" src="assets/favicon-32x32.png" />
 
-      <a class="text-sm font-medium hover:underline underline-offset-4 dark:text-white"
-        href="https://github.com/ViniciusTei/viniciustei-web" target=”_blank”>
-        ViniciusTei
-      </a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 border-t border-black/10 dark:border-white/10 bg-background">
+    <div class="max-w-screen-xl mx-auto px-8 md:px-16 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <img src="assets/favicon-32x32.png" alt="VT logo" width="20" height="20">
+        <a href="https://github.com/ViniciusTei/viniciustei-web" target="_blank"
+           class="font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">
+          ViniciusTei
+        </a>
+      </div>
+      <span class="font-body text-xs text-outline">&#169; 2026 Vinicius Teixeira. Digital Craftsmanship.</span>
+      <div class="flex gap-4 text-on-surface-variant">
+        <a href="https://github.com/viniciustei" target="_blank" aria-label="GitHub" class="hover:text-accent-text transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/viniciustei" target="_blank" aria-label="LinkedIn" class="hover:text-accent-text transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:viniciustprates@gmail.com" aria-label="Email" class="hover:text-accent-text transition-colors"><i class="fa-regular fa-envelope"></i></a>
+      </div>
     </div>
   </footer>
 
-  <div id="under-construction"
-    class="animate-enter flex gap-3 fixed bottom-0 right-0 m-6 max-w-2xl bg-white border border-gray-500 rounded-lg p-2 dark:bg-vinicius-dark dark:border-vinicius-green">
-    <div id="p-4">
-      <i class="fa-solid fa-screwdriver-wrench text-gray-800 dark:text-vinicius"></i>
-    </div>
-    <div id="grid gap-2">
-      <strong data-i18n-key="alert.title" class="font-bold tracking-tighter text-sm text-gray-800 dark:text-vinicius">🚧
-        Work in progress!
-        🚧</strong>
-      <p data-i18n-key="alert.message" class="text-gray-500 text-xs/relaxed dark:text-white">This website is a proof of
-        concept. It can
-        and will receive changes in
-        the future.</p>
-    </div>
-
-    <i onclick="removeAlert()"
-      class="fa-solid fa-xmark text-vinicius-dark dark:text-vinicius-primary z-50 sticky top-0 right-0 cursor-pointer"></i>
-  </div>
-
+  <!-- Sphere canvas animation -->
   <script>
-    const removeAlert = () => {
-      const alert = document.getElementById("under-construction")
-      alert.classList.remove("animate-enter");
-      alert.classList.add("animate-leave");
-      alert.classList.add("translate-y-[300px]");
+  (function () {
+    var canvas = document.getElementById('hero-sphere');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var angle = 0;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     }
-    setTimeout(removeAlert, 10000)
+    resize();
+    window.addEventListener('resize', resize);
+
+    function isDark() { return document.documentElement.classList.contains('dark'); }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      var cx = canvas.width / 2;
+      var cy = canvas.height / 2;
+      var R = Math.min(canvas.width, canvas.height) * 0.32;
+      var opacity = isDark() ? 0.55 : 0.28;
+      var color = isDark() ? '0,255,127' : '0,109,51';
+      var SEGS = 18;
+
+      ctx.shadowBlur = isDark() ? 10 : 0;
+      ctx.shadowColor = 'rgba(0,255,127,0.5)';
+
+      for (var i = 0; i <= SEGS; i++) {
+        var phi = (i / SEGS) * Math.PI - Math.PI / 2;
+        var ringR = R * Math.cos(phi);
+        var vy = R * Math.sin(phi);
+        ctx.beginPath();
+        for (var j = 0; j <= 120; j++) {
+          var theta = (j / 120) * 2 * Math.PI + angle;
+          var px = cx + ringR * Math.cos(theta);
+          var py = cy - vy;
+          if (j === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+        }
+        ctx.strokeStyle = 'rgba(' + color + ',' + opacity + ')';
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+
+      for (var j2 = 0; j2 < SEGS; j2++) {
+        var theta2 = (j2 / SEGS) * 2 * Math.PI + angle;
+        ctx.beginPath();
+        for (var i2 = 0; i2 <= 60; i2++) {
+          var phi2 = (i2 / 60) * Math.PI - Math.PI / 2;
+          var px2 = cx + R * Math.cos(phi2) * Math.cos(theta2);
+          var py2 = cy - R * Math.sin(phi2);
+          if (i2 === 0) ctx.moveTo(px2, py2); else ctx.lineTo(px2, py2);
+        }
+        ctx.strokeStyle = 'rgba(' + color + ',' + opacity + ')';
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+
+      angle += 0.003;
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
   </script>
+
+  <!-- Scroll progress bar -->
+  <script>
+  (function () {
+    var bar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', function () {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+    }, { passive: true });
+  })();
+  </script>
+
+  <!-- Active nav dot indicator -->
+  <script>
+  (function () {
+    var links = document.querySelectorAll('.nav-link');
+    var sectionIds = ['home', 'skills', 'projects', 'experience', 'contact'];
+
+    function setActive(id) {
+      links.forEach(function (link) {
+        var dot = link.querySelector('.nav-dot');
+        if (dot) dot.remove();
+        link.classList.remove('text-on-surface');
+        link.classList.add('text-on-surface-variant');
+      });
+      var active = document.querySelector('.nav-link[href="#' + id + '"]');
+      if (!active) return;
+      active.classList.remove('text-on-surface-variant');
+      active.classList.add('text-on-surface');
+      var dot = document.createElement('span');
+      dot.className = 'nav-dot absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent';
+      active.appendChild(dot);
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { threshold: 0.4 });
+
+    sectionIds.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+  })();
+  </script>
+
   <script src="lib/translation.js"></script>
-
   <script src="lib/theme.js"></script>
-</body>
 
+</body>
 </html>
